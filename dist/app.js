@@ -10,6 +10,7 @@ var _helmet = require('helmet'); var _helmet2 = _interopRequireDefault(_helmet);
 
 var _homeRoutes = require('./routes/homeRoutes'); var _homeRoutes2 = _interopRequireDefault(_homeRoutes);
 var _userRoutes = require('./routes/userRoutes'); var _userRoutes2 = _interopRequireDefault(_userRoutes);
+var _tokenRoutes = require('./routes/tokenRoutes'); var _tokenRoutes2 = _interopRequireDefault(_tokenRoutes);
 
 const whiteList = [
   'http:192.168.0.90:82',
@@ -45,6 +46,7 @@ class App {
     routes() {
       this.app.use('/', _homeRoutes2.default);
       this.app.use('/users', _userRoutes2.default);
+      this.app.use('/tokens', _tokenRoutes2.default)
     }
   }
   

@@ -8,8 +8,9 @@ import express from 'express';
 import cors from 'cors';
 import helmet from 'helmet';
 
-import homeRoutes from './routes/homeRoutes'
+import homeRoutes from './routes/homeRoutes';
 import userRoutes from './routes/userRoutes';
+import tokenRoutes from './routes/tokenRoutes';
 
 const whiteList = [
   'http:192.168.0.90:82',
@@ -45,6 +46,7 @@ class App {
     routes() {
       this.app.use('/', homeRoutes);
       this.app.use('/users', userRoutes);
+      this.app.use('/tokens', tokenRoutes)
     }
   }
   

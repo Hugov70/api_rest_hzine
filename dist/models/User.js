@@ -46,7 +46,6 @@ var _bcryptjs = require('bcryptjs'); var _bcryptjs2 = _interopRequireDefault(_bc
 
     this.addHook('beforeSave', async (user) => {
       if (user.password) {
-      // eslint-disable-next-line no-param-reassign
         user.password_hash = await _bcryptjs2.default.hash(user.password, 8);
       }
     });
