@@ -17,9 +17,9 @@ const whiteList = [
   'http://localhost:3000',
   'http://localhost:3001',
   'http://localhost:3002',
-  'https://hzine.netlify.app/',
-  'https://hzine.netlify.app/login/',
-  'https://hzine.netlify.app/register/'
+  'https://hzine.netlify.app',
+  'https://hzine.netlify.app/login',
+  'https://hzine.netlify.app/register'
 ]
 
 const corsOptions = {
