@@ -31,11 +31,17 @@ class TokenController {
       expiresIn: process.env.TOKEN_EXPIRATION,
     });
 
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    res.sendFile(path.resolve('client/index.html'))
+
     return res.json({ token, user: {
       nome: user.nome,
       id, 
       email
     } });
+
+    
   }
 }
 
