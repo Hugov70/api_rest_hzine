@@ -19,7 +19,9 @@ const whiteList = [
   'http://localhost:3002',
   'https://hzine.netlify.app',
   'https://hzine.netlify.app/login',
-  'https://hzine.netlify.app/register'
+  'https://hzine.netlify.app/register',
+  'https://hzine-5upuj2db6-hugov70s-projects-8db8cbbe.vercel.app/login',
+  'https://hzine-5upuj2db6-hugov70s-projects-8db8cbbe.vercel.app'
 ]
 
 const corsOptions = {
