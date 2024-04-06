@@ -17,6 +17,9 @@ const whiteList = [
   'http://localhost:3000',
   'http://localhost:3001',
   'http://localhost:3002',
+  'https://hzine.netlify.app',
+  'https://hzine.netlify.app/login',
+  'https://hzine.netlify.app/register'
 ]
 
 const corsOptions = {
@@ -46,7 +49,7 @@ class App {
     routes() {
       this.app.use('/', _homeRoutes2.default);
       this.app.use('/users', _userRoutes2.default);
-      this.app.use('/tokens', _tokenRoutes2.default)
+      this.app.use('/tokens', _tokenRoutes2.default);
     }
   }
   
